@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Employee_Dashboard_Panel</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>AddEmployee</servlet-name>
+    <servlet-class>myPackage.AddEmp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddEmployee</servlet-name>
+    <url-pattern>/EmpAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateEmployee</servlet-name>
+    <servlet-class>myPackage.UpdateEmp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateEmployee</servlet-name>
+    <url-pattern>/EmpUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteEmployee</servlet-name>
+    <servlet-class>myPackage.DeleteEmp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteEmployee</servlet-name>
+    <url-pattern>/EmpDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FindEmployee</servlet-name>
+    <servlet-class>myPackage.FindEmp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindEmployee</servlet-name>
+    <url-pattern>/EmpFind</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FindAllEmployee</servlet-name>
+    <servlet-class>myPackage.FindAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindAllEmployee</servlet-name>
+    <url-pattern>/findAll</url-pattern>
+  </servlet-mapping>
+</web-app>
